@@ -13,8 +13,13 @@ def get_name() -> str:
     return name
 
 
+def get_sex():
+    age = input("What's your sex?")
+    return age
+
+
 def wellcom():
-    print("Wellcom!")
+    print("Wellcom! Get comfortable")
 
 
 def print_hi():
