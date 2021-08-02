@@ -10,7 +10,7 @@ def print_hi(name):
 
 
 def main():
-    # add main function
+    # add main function...
     print_hi('PyCharm')
     
 # Press the green button in the gutter to run the script.
