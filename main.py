@@ -14,7 +14,7 @@ def get_name() -> str:
 
 
 def wellcom():
-    print("Wellcom!")
+    print("Wellcom! Get comfortable")
 
 
 def print_hi():
