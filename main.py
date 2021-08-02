@@ -11,6 +11,9 @@ def get_name() -> str:
     """
     name = input("What's your name?")
     return name
+def get_age():
+    age = input("What's your age?")
+    return age
 
 
 def wellcom():
