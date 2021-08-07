@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from modules.shacalc import get_sha256
+from file_sha_calculator.shacalc import get_sha256
 
 
 class Test(TestCase):
