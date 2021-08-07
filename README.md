@@ -4,4 +4,5 @@ gets file path
 
 calculates sha for this file
 
-returns sha as list of pairs of HEX + ext as string
+returns sha as list of pairs of HEX
+
