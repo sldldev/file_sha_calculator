@@ -2,13 +2,24 @@
 import hashlib
 
 
+def split_sha_to_hex_pairs(hex_sha):
+    """
+    This function breaks 64 chars hex sha256 in to list of hex_pairs
+    :param hex_sha:
+    :return:
+    """
+    step = 2
+    hex_pairs = [hex_sha[pos:pos + step] for pos in range(0, len(hex_sha), step)]
+    return hex_pairs
+
+
 def get_sha256(file_path):
     """
     This function calculates Sha 265 for files
     :param file_path:
     :return: list of HEX pairs[]
     """
-    step = 2
+
     sha256_hash = hashlib.sha256()
 
     with open(file_path, "rb") as f:
@@ -17,7 +28,6 @@ def get_sha256(file_path):
             sha256_hash.update(byte_block)
 
     hex_sha = sha256_hash.hexdigest()
-
-    hex_pairs = [hex_sha[pos:pos + step] for pos in range(0, len(hex_sha), step)]
+    hex_pairs = split_sha_to_hex_pairs(hex_sha)
 
     return hex_pairs
