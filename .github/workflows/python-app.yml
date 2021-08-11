@@ -34,3 +34,7 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+    - name: Custom job
+      run: |
+        python C:\TD_TEST_INSTALL_FOLDER\svn_tests\debug_run.py
+    
