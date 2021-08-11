@@ -24,7 +24,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install flake8 pytest
-        # pip install -r requirements.txt
+        pip install -r C:\TD_TEST_INSTALL_FOLDER\svn_tests\requirements.txt
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
@@ -36,5 +36,6 @@ jobs:
         pytest
     - name: Custom job
       run: |
+      
         python C:\TD_TEST_INSTALL_FOLDER\svn_tests\debug_run.py
     
